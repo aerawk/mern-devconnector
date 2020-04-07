@@ -8,7 +8,8 @@ const connectDB = async () => {
       // these are to remove deprecation warnings in the terminal
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      useCreateIndex: true
+      useCreateIndex: true,
+      useFindAndModify: false
     });
     console.log('MongoDB Connected!');
   } catch (err) {
