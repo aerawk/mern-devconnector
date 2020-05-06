@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import Spinner from '../layout/Spinner';
 
 const ProfileItem = ({ profile: { user, status, company, location, skills } }) => {
   return user ? (
