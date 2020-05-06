@@ -25,9 +25,7 @@ const ProfileItem = ({ profile: { user, status, company, location, skills } }) =
         ))}
       </ul>
     </div>
-  ) : (
-    <Spinner />
-  );
+  ) : null;
 };
 
 ProfileItem.propTypes = {

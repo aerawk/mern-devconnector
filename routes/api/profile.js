@@ -114,6 +114,7 @@ router.post(
 router.get('/', async (req, res) => {
   try {
     const profiles = await Profile.find().populate('user', ['name', 'avatar']);
+    // .execPopulate(); may work to eliminate issues from module 54
     res.json(profiles);
   } catch (err) {
     console.error(err.message);
